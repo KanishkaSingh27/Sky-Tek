@@ -1,0 +1,172 @@
+<html>
+  <head>
+  <title> Sky Technology.Inc - Home</title>
+     <link rel="stylesheet" type="text/css" href="C:\Users\admin\Downloads\Website\style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<div class="topnav" id="myTopnav">
+  <b>
+  <a href="#">Contact us</a>
+  <a href="#">Clients</a>
+  <a href="#">Services</a>
+  <a href="#">Products & Solutions</a>
+  <a href="C:\Users\admin\Downloads\Website\about us.html">About us</a>
+ <a href="#" class="active">Home</a>
+</b>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i data-feather="menu"></i>
+     <script>
+      feather.replace()
+    </script>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<div class="header">
+
+<!--Content before waves-->
+<div class="inner-header flex">
+
+<img src="C:\Users\admin\Downloads\Website\logo.png" height="100px" alt="logo">
+
+<h1>Sky Technology</h1>
+</div>
+
+<!--Waves Container-->
+<div>
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+</g>
+</svg>
+</div>
+<!--Waves end--></div>
+<!--Header ends-->
+<!--Content starts-->
+<br><div class="content flex" >
+
+<div class="Products" id="spacing"> <b><P>Products & Solutions</P></b>
+	Enterprise Content Capture with eFLOW™<br>
+Invoice Processing<br>
+Digital Mailroom solution<br>
+Hindi OCR<br>
+Document Scanner <br>OMR / ICR sheets Printing
+<div class="button-wrapper slide-side">
+   <div class="button7div"><a href="#more"></a></div>
+  <input class="button7" type="button" name="button7" value="read more"/> 
+</div>
+  
+</div>
+<div class="services" id="spacing"><b><p>Services</p></b>
+	Forms  Processing & BPO Service <br> 
+Document Scanning & Indexing<br>
+Professional Services(PS)<br>
+Examination Processing Services (Offline / Online)<br>
+Micro film & microfiche scanning services <br>
+GIS & Cartography Services <br>
+	<div class="button-wrapper slide-side">
+   <div class="button7div"><a href="#more"></div>
+  <input class="button7" type="button" name="button7" value="read more"/> 
+</div>
+  </div></a></div>
+  <p align="center"> Our partners</p>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <center><img src="http://www.sky-tek.net/uploads/3/4/3/5/34355560/9035660_orig.jpg" style="width:40%; height:50%;">
+</div>
+
+<div class="mySlides fade">
+  <center><img src="https://images.squarespace-cdn.com/content/5c632d7dd86cc932fd3f13a3/1557154685066-IRHNKQ8CDENDNA4KC609/Asset+68.png?content-type=image%2Fpng" style="width:40%;height:50%" >
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</center>
+<footer>
+  <p>&copy;Web hosting by Sky-tek <br> <a href="http://www.sky-tek.net/" class="link">View old website</a>
+  </p>
+</footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i data-feather="arrow-up"></i></button>
+
+ <script>
+      feather.replace()
+    </script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</html>
